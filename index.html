@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Image Converter</h1>
+    </header>
+
+    <main>
+        <input type="file" accept="image/*" onchange="convertImage(event)">
+        <select id="format">
+            <option value="png">PNG</option>
+            <option value="jpg">JPG</option>
+            <option value="gif">GIF</option>
+            <option value="bmp">BMP</option>
+            <option value="webp">WEBP</option>
+            <option value="tiff">TIFF</option>
+        </select>
+        <img id="outputImage" alt="Converted Image">
+        <a id="downloadButton" download="converted_image.png" href="#" style="display: none;">Download Converted Image</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Image Converter. All rights reserved, Ziad Hagagy</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
